@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cucina - Italian Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">La Cucina</div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#reservations" class="btn-reserve">Reserve Table</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to La Cucina</h1>
+            <p>Experience authentic Italian cuisine in the heart of the city</p>
+            <a href="#menu" class="btn-primary">View Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-tabs">
+                <input type="radio" name="menu-tab" id="starters" checked>
+                <input type="radio" name="menu-tab" id="mains">
+                <input type="radio" name="menu-tab" id="desserts">
+                <input type="radio" name="menu-tab" id="drinks">
+
+                <nav class="menu-nav">
+                    <label for="starters">Starters</label>
+                    <label for="mains">Main Course</label>
+                    <label for="desserts">Desserts</label>
+                    <label for="drinks">Drinks</label>
+                </nav>
+
+                <div class="menu-content">
+                    <div class="menu-section starters">
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?w=800" alt="Bruschetta">
+                            <div class="item-details">
+                                <h3>Bruschetta <span class="price">$8.99</span></h3>
+                                <p>Grilled bread rubbed with garlic, topped with tomatoes, olive oil, and herbs</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?w=800" alt="Caprese Salad">
+                            <div class="item-details">
+                                <h3>Caprese Salad <span class="price">$10.99</span></h3>
+                                <p>Fresh mozzarella, tomatoes, and sweet basil leaves with balsamic glaze</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1595295333158-4742f28fbd85?w=800" alt="Arancini">
+                            <div class="item-details">
+                                <h3>Arancini <span class="price">$9.99</span></h3>
+                                <p>Sicilian rice balls stuffed with mozzarella and meat ragu, served with marinara</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=800" alt="Calamari Fritti">
+                            <div class="item-details">
+                                <h3>Calamari Fritti <span class="price">$12.99</span></h3>
+                                <p>Crispy fried calamari served with lemon wedges and spicy marinara sauce</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-section mains">
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=800" alt="Margherita Pizza">
+                            <div class="item-details">
+                                <h3>Margherita Pizza <span class="price">$14.99</span></h3>
+                                <p>Fresh tomatoes, mozzarella, basil, and extra virgin olive oil</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1612874742237-6526221588e3?w=800" alt="Spaghetti Carbonara">
+                            <div class="item-details">
+                                <h3>Spaghetti Carbonara <span class="price">$16.99</span></h3>
+                                <p>Creamy sauce with pancetta, eggs, Pecorino Romano, and black pepper</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1515516969-d4008cc6241a?w=800" alt="Osso Buco">
+                            <div class="item-details">
+                                <h3>Osso Buco <span class="price">$28.99</span></h3>
+                                <p>Braised veal shanks in white wine sauce, served with saffron risotto</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=800" alt="Seafood Risotto">
+                            <div class="item-details">
+                                <h3>Seafood Risotto <span class="price">$24.99</span></h3>
+                                <p>Creamy Arborio rice with mixed seafood, white wine, and parmesan</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1626804475297-41608ea09aeb?w=800" alt="Veal Saltimbocca">
+                            <div class="item-details">
+                                <h3>Veal Saltimbocca <span class="price">$26.99</span></h3>
+                                <p>Tender veal cutlets with prosciutto and sage in white wine sauce</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1619895092538-128341789043?w=800" alt="Lasagna">
+                            <div class="item-details">
+                                <h3>Classic Lasagna <span class="price">$18.99</span></h3>
+                                <p>Layers of pasta, meat ragù, béchamel, and Parmigiano-Reggiano</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-section desserts">
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=800" alt="Tiramisu">
+                            <div class="item-details">
+                                <h3>Tiramisu <span class="price">$7.99</span></h3>
+                                <p>Classic Italian dessert with coffee-soaked ladyfingers and mascarpone cream</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=800" alt="Panna Cotta">
+                            <div class="item-details">
+                                <h3>Panna Cotta <span class="price">$6.99</span></h3>
+                                <p>Silky smooth vanilla cream with berry compote</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1621955511667-e2c316e4575d?w=800" alt="Cannoli">
+                            <div class="item-details">
+                                <h3>Sicilian Cannoli <span class="price">$6.99</span></h3>
+                                <p>Crispy pastry tubes filled with sweet ricotta and chocolate chips</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=800" alt="Affogato">
+                            <div class="item-details">
+                                <h3>Affogato <span class="price">$5.99</span></h3>
+                                <p>Vanilla gelato 'drowned' in a shot of hot espresso</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-section drinks">
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=800" alt="Italian Wine">
+                            <div class="item-details">
+                                <h3>House Red Wine <span class="price">$8.99</span></h3>
+                                <p>Selected Italian red wine by the glass</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=800" alt="Espresso">
+                            <div class="item-details">
+                                <h3>Espresso <span class="price">$3.99</span></h3>
+                                <p>Rich and aromatic Italian coffee</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?w=800" alt="Prosecco">
+                            <div class="item-details">
+                                <h3>Prosecco <span class="price">$9.99</span></h3>
+                                <p>Sparkling Italian wine, perfect for celebrations</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1560512823-829485b8bf24?w=800" alt="Aperol Spritz">
+                            <div class="item-details">
+                                <h3>Aperol Spritz <span class="price">$10.99</span></h3>
+                                <p>Classic Italian aperitif with Prosecco and soda</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1563223771-375783ee91ad?w=800" alt="Limoncello">
+                            <div class="item-details">
+                                <h3>Limoncello <span class="price">$7.99</span></h3>
+                                <p>Traditional lemon liqueur, served chilled</p>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <img src="https://images.unsplash.com/photo-1558645836-e44122a743ee?w=800" alt="Italian Soda">
+                            <div class="item-details">
+                                <h3>Italian Soda <span class="price">$4.99</span></h3>
+                                <p>Choice of flavored syrup with sparkling water and cream</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 1995, La Cucina brings the authentic flavors of Italy to your table. Our recipes have been passed down through generations, and we take pride in using only the finest ingredients imported directly from Italy.</p>
+                    <p>Every dish is prepared with love and attention to detail by our expert chefs, ensuring you experience the true essence of Italian cuisine.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1200" alt="Restaurant interior">
+                </div>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <h3>Opening Hours</h3>
+                    <p>Mon-Sun: 11:00 - 23:00</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>123 Italian Street, Foodville</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-phone"></i>
+                    <h3>Reservations</h3>
+                    <p>+1 234 567 890</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800" alt="Restaurant interior">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800" alt="Chef preparing pasta">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=800" alt="Fresh ingredients">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1560624052-449f5ddf0c31?w=800" alt="Wine selection">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800" alt="Restaurant atmosphere">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800" alt="Private dining">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-map">
+                    <img src="https://images.unsplash.com/photo-1587574293340-e0011c4e8ecf?w=1200" alt="Restaurant exterior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservations" class="reservations">
+        <div class="container">
+            <h2>Make a Reservation</h2>
+            <form class="reservation-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <input type="number" id="guests" name="guests" min="1" max="10" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary">Reserve Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>La Cucina</h3>
+                    <p>123 Italian Street<br>Foodville, FV 12345</p>
+                    <p>Phone: +1 234 567 890<br>Email: info@lacucina.com</p>
+                </div>
+                <div class="footer-hours">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Friday: 11:00 - 23:00<br>Saturday - Sunday: 10:00 - 23:00</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 La Cucina. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
